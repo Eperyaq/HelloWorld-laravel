@@ -1,0 +1,10 @@
+body{
+    background-color: brown;
+
+    h1{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+

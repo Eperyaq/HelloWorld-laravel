@@ -13,6 +13,9 @@ return Application::configure(basePath: dirname(__DIR__))
         then: function () {
             Route::prefix('usuarios')->group(base_path('routes/routes_usuarios.php'));
             Route::prefix('productos')->group(base_path('routes/routes_producto.php'));
+            Route::prefix('/')->group(base_path('routes/web.php'));
+            Route::prefix('/reservas')->group(base_path('routes/routes_reservas.php'));
+            Route::prefix('/eventos')->group(base_path('routes/routes_evento.php'));
         
         }
     )

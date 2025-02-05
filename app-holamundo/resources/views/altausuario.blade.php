@@ -7,5 +7,9 @@
 </head>
 <body>
     <h1>Alta usuarios</h1>
+
+    <p>
+        {{ $datosUsuario["email"]}}
+    </p>
 </body>
 </html>
