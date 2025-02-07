@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\User;
+
 
 class UsuarioController extends Controller
 {
@@ -17,8 +19,20 @@ class UsuarioController extends Controller
     }
 
     public function getById($id){
-        return view('getusuario', compact('id'));
+        $user = User::find($id);
+
+        return view('getusuario', compact('user'));
     }
 
+    public function deleteByID($id){
+        $user = User::find($id);
+
+        if($user){
+            $user->delete();
+        }
+
+       
+        return view('borradousuario', compact('user'));
     
+    }
 }

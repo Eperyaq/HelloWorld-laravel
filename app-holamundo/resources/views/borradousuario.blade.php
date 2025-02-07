@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get usuario</title>
+    <title>Document</title>
 </head>
 <body>
-    <h1>Nombre: {{ $user["name"] }} </h1>
+<h1>Usuario con nombre: {{ $user["name"] }} borrado correctamente :D</h1>
 </body>
 </html>
